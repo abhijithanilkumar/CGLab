@@ -66,7 +66,7 @@ void draw(int x1,int y1,int x2,int y2,int c)
     }
 }
 
-void Draw8Points(int xc,int yc, int a, int b)
+void DrawPoints(int xc,int yc, int a, int b)
 {
     putpixel(xc+a, yc+b, 1);
     putpixel(xc-a, yc+b, 1);
@@ -88,6 +88,6 @@ void circle(int xc,int yc, int R)
     theta+=dtheta;
     x=round(R*cos(theta));
     y=round(R*sin(theta));
-    Draw8Points(xc,yc,x,y);
+    DrawPoints(xc,yc,x,y);
   }
 }
